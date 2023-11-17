@@ -16,7 +16,7 @@ const ListCmp = ({ arr, status }) => {
     >
       {/* list type : */}
       <h1 style={{ color: "#333", borderBottom: "2px solid #ddd", paddingBottom: "10px" }}>
-        {status ? "Completed list" : "Incompleted list"}
+        {status ? "Completed list" : "Notcompleted list"}
       </h1>
 
       <div
