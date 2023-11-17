@@ -13,7 +13,7 @@ const App = () => {
       { id: prevTasks.length + 1, title, listId },
     ]);
   };
-
+  
   const deleteTask = (taskId) => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== taskId));
   };
