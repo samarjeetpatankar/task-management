@@ -47,16 +47,14 @@ function App() {
       <CreateTask />
       <button className={"button"} onClick={handleOnExport}>
         Export to Excel
-      </button> 
+      </button>
       <div className="list">
-      <ListCmp arr={data.incomplete} status={false} />
-      <ListCmp arr={data.complete} status={true} />
+        <ListCmp arr={data.incomplete} status={false} />
+        <ListCmp arr={data.complete} status={true} />
       </div>
-      
     </div>
   );
 }
 
 export default App;
-
 

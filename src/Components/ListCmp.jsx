@@ -5,7 +5,7 @@ const ListCmp = ({ arr, status }) => {
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "column", // Change to column-wise display
         alignItems: "center",
         margin: "20px",
         border: "2px solid #ddd",
@@ -16,15 +16,16 @@ const ListCmp = ({ arr, status }) => {
     >
       {/* list type : */}
       <h1 style={{ color: "#333", borderBottom: "2px solid #ddd", paddingBottom: "10px" }}>
-        {status ? "Completed list" : "Notcompleted list"}
+        {status ? "Completed list" : "Not completed list"}
       </h1>
 
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row", // Change to row-wise display
           alignItems: "center",
           marginTop: "10px",
+          flexWrap: "wrap", // Allow items to wrap to the next row
         }}
       >
         {arr.map((el, i) => {
@@ -39,6 +40,7 @@ const ListCmp = ({ arr, status }) => {
               key={new_key}
               style={{
                 marginBottom: "10px",
+                marginRight: "10px", // Add margin for spacing
                 border: "1px solid #ddd",
                 borderRadius: "8px",
                 overflow: "hidden",
@@ -52,5 +54,3 @@ const ListCmp = ({ arr, status }) => {
 };
 
 export { ListCmp };
-
-
