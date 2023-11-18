@@ -1,23 +1,45 @@
-# React Task Management App
+# React Task Manager
 
 ## Overview
+This is a simple React application for managing tasks. Users can create tasks, mark them as completed, update task names, and delete tasks. The application also allows exporting the task list to an Excel file.
 
-This is a simple React task management app that facilitates the creation, deletion, updating, and movement of tasks between two lists. Additionally, the app provides the functionality to export tasks to an Excel file.
+## Usage
+### Add a Task:
+1. Enter the task name in the input field.
+2. Click the "Add Task" button.
+
+### Update Task:
+1. Click the "Update" button on a task card.
+2. Modify the task name in the displayed input field.
+3. Click the "Submit" button to update the task.
+
+### Mark Task as Completed/Incomplete:
+- Click the corresponding button on a task card to change its status.
+
+### Delete a Task:
+- Click the "Delete" button on a task card to remove the task.
+
+### Export to Excel:
+- Click the "Export to Excel" button to download the task list as an Excel file.
+
+## File Structure
+The project has the following file structure:
+
+- **src:** Contains the source code.
+  - **Components:** React components used in the application.
+  - **Redux:** Redux store configuration.
+- **App.js:** Main component and application entry point.
+- **public:** Static assets and HTML template.
+- **README.md:** Project documentation.
 
 ## Components
+1. **App.js:** The main component that renders the task manager application. It includes the task creation form, export button, and task lists.
 
-### App.js
+2. **CreateTask.js:** A component for adding new tasks. It includes a form with an input field and a submit button.
 
-The main component responsible for setting up the overall structure of the app. It manages the state of tasks and provides functions for adding, deleting, updating, and moving tasks.
+3. **ListCmp.js:** A component for displaying task lists. It receives an array of tasks and renders them as cards.
 
-### TaskList.js
+4. **TaskCard.js:** A component representing an individual task card. It includes buttons for updating, marking as completed/incomplete, and deleting a task.
 
-A component designed to display a list of tasks. It receives tasks as props and renders individual `TaskCard` components.
-
-### TaskCard.js
-
-Represents a single task within the app. This component handles task editing, updating, deletion, and movement between lists.
-
-### ExcelExportButton.js
-
-A button component specifically created to trigger the export of tasks to an Excel file. It utilizes the `xlsx` library for Excel file manipulation.
+## Redux Store
+The application uses Redux for state management. The store configuration is located in the Redux/Store.js file.

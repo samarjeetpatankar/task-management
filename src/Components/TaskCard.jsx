@@ -134,3 +134,4 @@ const TaskCard = ({ index, name, status }) => {
 };
 
 export { TaskCard };
+
